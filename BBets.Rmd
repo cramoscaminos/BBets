@@ -17,7 +17,6 @@ require(knitr)
 source(file="BrLw.R")
 ```
 
-
 <!-- We recommend you use git branches -- create a separate branch for each major section i.e. Introduction, Methods, Results, Inferential Results, and Discussion and Conclusions - leave the YAML block untouched until the final merge where you put in your own name !-->
 
 # Introduction
@@ -58,7 +57,7 @@ hist(saveBank)
 print(bank)
 ```
 
-To make the game fair Brownklow should pay out R mean (saveBank)
+To make the game fair Brownklow should pay out "r mean (saveBank)"
 
 # In the class and payoff as described  If you highered 40 brownlow substitute teachers to do the same thing that Brownlow did then.
 ## what is their average earnings
