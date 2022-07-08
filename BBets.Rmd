@@ -24,7 +24,7 @@ source(file="BrLw.R")
 
 <!--In this section you explain what you are trying to show.  Where did the data come from?  What is the research or other question you are trying to answer?!-->
 
- At the first day of class there are 35 students in Math Statistics class and professor Brownlow always proposes this bet to his students "I will wager $2 to your bet of $1 that at least two people in today's class have  the same birthday.  He tells me he has made that bet 637 times so far. Where do you think his profits are? Discuss this in a markdown document
+At the first day of class there are 35 students in Math Statistics class and professor Brownlow always proposes this bet to his students "I will wager $2 to your bet of $1 that at least two people in today's class have  the same birthday.  He tells me he has made that bet 637 times so far. Where do you think his profits are? Discuss this in a markdown document
  
 Report git commit structure:
 There are 3 questions and there should be at least 3 separate commits, at least one dealing with each of the 3 questions.
@@ -58,7 +58,8 @@ hist(saveBank)
 print(bank)
 ```
 
-## Question 1 find fair odds  
+## Question 1 find fair odds 
+
 
 ```{r}
 numClass = 35
@@ -95,6 +96,7 @@ The 95% confidence interval is mean of (saveBank +/- 2*sd(saveBank)
 ```{r}
 mean(saveBank)+2*sd(saveBank)
 mean(saveBank)-2*sd(saveBank)
+sd(saveBank)
 ```
 
 # What size of class makes the 2:1 bet fair?  Use manipulation of number of Students to tune Brownlows earnings to zero.
