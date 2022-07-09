@@ -73,12 +73,12 @@ In this graph Brownlow is winning $283
 
 # What are the fair odds? Use manipulation of odds in the function to tune Brownlows earnings to zero.  
 
-## Question 1 Fair odds 
+## Question 1  fair odds
 
 ```{r}
 numClass = 35
-# my guess at fair odds = $4.5 : $1
-odds = 4.5
+# my guess at fair odds = $xxx : $1
+odds = 4.33
 countoDo = 637
 
 saveBank = vector ('numeric')
@@ -88,10 +88,9 @@ bank = (BrLw (numClass,odds,countoDo))
 saveBank[k] = bank
 }
 print(mean(saveBank))
-hist(saveBank)
+
 ``` 
-The expected value is close to zero. Brownlow is making money on average about $282.for 2:1 Professor Brownlow is running a scam. If we change the odds to 5:1
-Brownlow would be -$81.To make the game fair Brownlow should pay out "r  mean." The closest to 0 was 4.5:1 odds, but professor would be in the negative -$6.64. 
+The expected value is close to zero. Brownlow is making money on average about $282.for 2:1 Professor Brownlow is running a scam. To make the odds more fair the odds should be 4.33:1
 
 ## Question 2 Class size 
 
@@ -113,21 +112,11 @@ hist(saveBank)
 
 <!--Decide on your methods:  In this section explain the approach you will take to attack the issue --- how will you decide on a likely estimate of professor Brownlow's earnings or losses after 637 bets. Also explain how you construct a 95% confidence interval about your estimate of his winnings !-->
 
-```{r}
-saveBank
-LCL = mean(saveBank) - 2*sd(saveBank)
-UCL = mean(saveBank) + 2*sd(saveBank)
-print(LCL)
-print(UCL)
-```
 
-```{r}
-sd(saveBank)
-```
 
 # What size of class makes the 2:1 bet fair?  Use manipulation of number of Students to tune Brownlows earnings to zero.
 
-To make the odds fair Professor Brownlow should have a class size of approximately 28 students. The number is -$13 closest to 0 without going over. 
+To make the odds of 2:1 fair Professor Brownlow should have a class size of approximately 28 students. The number should be closest to 0 without going over. 
 
 ## Question 3 How much money would Brownlow be expected to end up with
 <!--Explain and display the results of your method of coming up with the estimate of professor Brownlows betting profits!-->
@@ -149,6 +138,29 @@ hist(saveBank)
 ``` 
 
 If the number of students is 35, and the odds are 2:1, Professor Brownlow would make money off of his students. The amount will vary, but in this instance professor Brownlow stands to  make extra $276. 
+
+
+
+
+```{r}
+saveBank
+LCL = mean(saveBank) - 2*sd(saveBank)
+UCL = mean(saveBank) + 2*sd(saveBank)
+print(LCL)
+print(UCL)
+```
+
+```{r}
+sd(saveBank)
+```
+
+
+
+
+
+
+
+
 
 # Discussion and Conclusion
 
