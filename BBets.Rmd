@@ -140,6 +140,7 @@ print(bank)
 ```
 
 If the number of students is 35, and the odds are 2:1, Professor Brownlow would make money off of his students. The amount will vary, but in this instance professor Brownlow stands to  make $268. 
+The LCL is 236. UCL is 348. Standard deviation 28. 
 
 ```{r}
 saveBank
